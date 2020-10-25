@@ -1,4 +1,4 @@
 if __name__ == '__main__':
-    n = int(input())
-    for i in range(0, n):
+    a = int(input())
+    for i in range(0, a): # loop from 0 to a
         print(i*i)
