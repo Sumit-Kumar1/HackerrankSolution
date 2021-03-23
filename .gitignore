@@ -5,7 +5,10 @@ __pycache__/
 
 # C extensions
 *.so
-
+#ignore vs code configuration files
+.vscode
+#ignore build files
+/*.exe
 # Distribution / packaging
 .Python
 build/
