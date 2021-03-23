@@ -1,29 +1,34 @@
 #include <bits/stdc++.h>
-
 using namespace std;
-
-
-// Complete the angryProfessor function below.
-string angryProfessor(int k, vector<int> a) {
-
-
+//if class is cancelled say YES else NO.
+string angryProfessor(int k, vector<int>a)
+{
+    int count{};
+    for(auto& i : a){
+        if(i <= 0)
+            count++;
+    }
+    if(count < k)
+        return "YES";
+    else
+        return "NO";
 }
 
 int main()
 {
-    int n{};
+    int n{1};
     cin>>n;
     while(n--){
-        int a{};
-        int b{};
+        int a{}; int b{};
         cin>>a>>b;
-        vector<int>a;
+        vector<int>v;
         for(int i=0;i<a;++i){
-            int p{};
-            cin>>p;
-            v.push_back(p);
+            int c{};
+            cin>>c;
+            v.push_back(c);
         }
-        cout<<angryProfessor(int b, v)<<endl;
+        cout<<angryProfessor(b,v);
+        cout<<endl;
     }
     return 0;
 }
